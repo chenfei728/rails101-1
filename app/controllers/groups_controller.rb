@@ -22,6 +22,7 @@ class GroupsController < ApplicationController
       redirect_to groups_path
     else
       render :new
+    end
   end
 
   def update
@@ -46,5 +47,4 @@ class GroupsController < ApplicationController
   def group_params
     params.require(:group).permit(:title, :description)
   end
-
 end
